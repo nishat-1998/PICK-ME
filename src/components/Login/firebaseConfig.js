@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDWIO9yxlDIwBJBmrCD67-sLFfJr1-B09o",
-  authDomain: "fire-auth-recap-5ca96.firebaseapp.com",
-  projectId: "fire-auth-recap-5ca96",
-  storageBucket: "fire-auth-recap-5ca96.appspot.com",
-  messagingSenderId: "351136651876",
-  appId: "1:351136651876:web:83dd23fd2d664eb5ed5d71"
+  apiKey: "AIzaSyAc554CTsOmWosbR5kbNJzV7Dzv7ky8B7o",
+  authDomain: "as-fire-auth.firebaseapp.com",
+  projectId: "as-fire-auth",
+  storageBucket: "as-fire-auth.appspot.com",
+  messagingSenderId: "118539046690",
+  appId: "1:118539046690:web:00ae6f63ee8b9fec60df7b"
 };
 export default firebaseConfig;
