@@ -8,9 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-import LocalHotelIcon from '@material-ui/icons/LocalHotel';
 import WcIcon from '@material-ui/icons/Wc';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import { useHistory } from 'react-router-dom';
@@ -38,39 +36,39 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Room({room}){
+export default function Ride({ride}){
   const classes = useStyles();
   const history = useHistory()
-    const handleBook = (vehicleType) => {
-        history.push(`/destination/${vehicleType}`);
+    const handleBook = (title) => {
+        history.push(`/destination/${title}`);
     }
   return (
     <Card className={classes.root}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            {room.avatar}
+            {ride.avatar}
           </Avatar>
         }
-        title={room.title}
+        title={ride.title}
       />
 
       <CardMedia
         className={classes.media}
-        image={room.imgUrl}
+        image={ride.imgUrl}
         title="Paella dish"
       />
-      <img src={`/images/${room.vehicleType}.png`} alt=""/>
+      <img src={`/images/${ride.title}.png`} alt=""/>
       <CardContent>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="share">
-          <WcIcon />: {room.capacity} 
+          <WcIcon />: {ride.capacity} 
         </IconButton>
         <IconButton aria-label="price">
-          <AttachMoneyIcon />: {room.price} 
+          <AttachMoneyIcon />: {ride.price} 
         </IconButton>
-        <Button onClick={() => handleBook(room.vehicleType)} variant="contained" color="primary">
+        <Button onClick={() => handleBook(ride.title)} variant="contained" color="primary">
             Search
         </Button>
       </CardActions>

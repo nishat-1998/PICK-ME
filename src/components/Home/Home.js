@@ -1,5 +1,5 @@
 import React from 'react';
-import Room from '../Room/Room';
+import Ride from '../Ride/Ride';
 
 const Home = () => {
     const style = {
@@ -7,7 +7,7 @@ const Home = () => {
         margin: '40px',
         justifyContent: 'space-between'
     }
-    const rooms = [
+    const rides = [
         {
             title: 'BIKE',
             imgUrl: 'https://th.bing.com/th/id/OIP.DfEjCMUIWWjAOJS5u8Sd_gHaFm?w=241&h=182&c=7&o=5&dpr=1.25&pid=1.7',
@@ -42,7 +42,7 @@ const Home = () => {
     return (
         <div style={style}>
             {
-                rooms.map(room => <Room key={room.vehicleType} room={room}></Room>)
+                rides.map(ride=> <Ride key={ride.title} ride={ride}></Ride>)
             }
         </div>
     );
