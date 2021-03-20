@@ -1,7 +1,7 @@
 
 ##THIS IS PICK ME WEBSITE 
 its a ride sharing website.
-(pick me[https://as-fire-auth.web.app/])
+[pick me(https://as-fire-auth.web.app/)]
 
 
 
