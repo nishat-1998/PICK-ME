@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import rideData from '../../rideData/rideData.json'
 import { Link,useParams } from 'react-router-dom';
+import Map from './Map'
 
 
 const Destination = () => {
@@ -60,7 +61,7 @@ const Destination = () => {
                     </div>
 
       <div className="col-sm-6 bg-dark">
-      
+      <Map></Map>
       </div>
             
      </div>  
